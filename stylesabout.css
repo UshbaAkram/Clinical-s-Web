@@ -1,0 +1,284 @@
+.jumbotron {
+   padding:70px 50px 70px 50px;
+    margin:0px auto; 
+    background: #f7f6f8 ;
+    color:rgb(14, 13, 13);
+  
+    
+    
+}/*
+.nav-link:hover{
+    text-decoration: underline;
+    color: red;
+    
+    
+}
+.link-container{
+    display: flex;
+    flex-direction: row;
+}
+*/
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+.row-header{
+   margin:0px auto;
+    padding:0px; 
+}
+
+.row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height:400px;
+}
+body{
+    
+    padding:50px 0px 0px 0px;
+    z-index:0;
+    
+}
+
+.navbar{
+    background-color: rgb(243, 240, 236);
+}
+
+.footer{
+    background-color: #f9f8fc;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+
+a, a:hover, a:focus {
+    text-decoration: none;
+    color: #0f0f0f;
+}
+.it:hover{
+    
+    background-color: #007bffce ;
+}
+.no-gutters {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+/*@media (max-width:768px){
+   .our{
+    width:100%;
+    align-self:center;
+
+    }
+}
+.btn-lg:hover{
+    background-color: #007bff;  Change this to your primary color 
+    color: #fff;
+   
+}*/
+
+
+
+
+/*______________________*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+  --color-1: #f2f3f7;
+  --text-color: #4391eb;
+  --accent-color: #006aff;
+}
+*{
+  margin: 0;
+  padding: 0;
+
+}
+html{
+  font-size: 12pt;
+  font-family: Poppins, Segoe UI, Tahoma, sans-serif;
+}
+nav{
+  height: 60px;
+  background-color: var(--color-1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  top: 0%;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  
+  
+  
+}
+.links-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ 
+}
+nav a{
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+  
+}
+nav a:hover{
+  text-decoration: underline;
+    color: red;
+}
+nav .home-link{
+  margin-right: auto;
+}
+nav svg{
+  fill: var(--text-color);
+}
+#sidebar-active{
+  display: none;
+}
+.open-sidebar-button, .close-sidebar-button{
+  display: none;
+}
+
+
+.ot{
+    width: 50%;
+}
+
+@media(max-width: 450px){
+  .links-container{
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    width: 300px;
+
+    background-color: var(--color-1);
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+    transition: 0.75s ease-out;
+  }
+  nav a{
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
+  }
+  .open-sidebar-button, .close-sidebar-button{
+    padding: 20px;
+    display: block;
+  }
+  #sidebar-active:checked ~ .links-container{
+    right: 0;
+  }
+  #sidebar-active:checked ~ #overlay{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+  .home-link{
+    max-width: 40%;
+      align-self: center;
+  }
+  nav {
+    float: right;
+}
+
+}
+
+
+
+
+
+@media (max-width:480px){
+    p{
+        font-size: small;
+    }
+    h1{
+        font-size: large;
+    }
+    h2{
+        font-size: medium;
+    }
+   
+}
+
+
+@media (max-width: 768px) {
+    .tablet-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .card-body{
+        font-size: x-small;
+       
+    }
+    .card-img-top{
+        width: 50%;
+    }
+    .card-title{
+        font-size: small;
+    }
+    .footer{
+        font-size: small;
+       text-align: center; 
+    }
+    .ot{
+        width: 75%;
+        height: 75%;
+       
+        align-items: center;
+        margin-left: 0;
+    }
+    .ot p{
+        font-size: x-small;
+    }
+    .ot h2{
+        font-size: small;
+    }
+    .mission-img{
+        width: 50%;
+        height: 30%;
+        margin-left: 0%;
+    }
+    .cardc{
+      width:fit-content;
+      height: min-content;
+      margin-left: 3%;
+      
+    }
+    
+
+}
+@media (max-width:576px){
+    .ot{
+        width: 75%;
+        height: 75%;
+       
+        align-items: center;
+        margin-left: 15%;
+    }
+    .ot p{
+        font-size: x-small;
+    }
+    .ot h2{
+        font-size: small;
+    }
+    .mission-img{
+        width: 75%;
+        height: 30%;
+        margin-left: 15%;
+    }
+}
